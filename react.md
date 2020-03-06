@@ -71,6 +71,31 @@ render(div, document.getElementById('root'));
 ```
 
 
+# create-react-app脚手架搭建的项目使用scss的方式
+
+1. 输入命令(创建完项目，立即执行该命令): `npm run eject`(该命令可以省略)
+   1) 如果项目文件发生了变化
+   2) 需要使用git先进行跟踪，才能使用该命令
+   3) 先执行`git add .`和`git commit -m "?"`，然后在执行`npm run eject`
+   4) 作用: 把webpack的打包配置文件，从隐藏的位置弹出(显示出来)
+      1) 用脚手架生成的react项目，webpack的打包配置文件是隐藏起来的
+   5) **该命令不是必须的，可以省略，只需要下载`node-sass`即可**
+      1) 不需要重新配置webpack，脚手架构建项目的时候已经配置好了
+
+
+2. 输入命令: `npm install node-sass -D`
+   1) 下载解析scss的插件
+
+3. 就可以正常使用scss文件，编写样式了
+
+4. 样式通过`import`引入，比如: `import "./index.scss"`
+
+
+
+
+
+
+
 # react中引入图片路径的问题
 
 1. 不能直接使用相对路径。
